@@ -13,7 +13,7 @@ def is_prime(num):
 
 # Route to serve the frontend
 @app.route('/')
-def index():
+def home():
     return render_template('index.html')
 
 # Route for handling the API request
@@ -47,4 +47,4 @@ def bfhl():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
